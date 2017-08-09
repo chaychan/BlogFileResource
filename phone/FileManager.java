@@ -51,7 +51,7 @@ public class FileManager {
      * 获取本机音乐列表
      * @return
      */
-    public static List<Music> getMusics() {
+    private static List<Music> getMusics() {
         ArrayList<Music> musics = new ArrayList<>();
         Cursor c = null;
         try {
@@ -91,7 +91,7 @@ public class FileManager {
      * 获取本机视频列表
      * @return
      */
-    public static List<Video> getVideos() {
+    private static List<Video> getVideos() {
 
         List<Video> videos = new ArrayList<Video>();
 
@@ -127,7 +127,7 @@ public class FileManager {
     }
 
     // 获取视频缩略图
-    public static Bitmap getVideoThumbnail(int id) {
+    private static Bitmap getVideoThumbnail(int id) {
         Bitmap bitmap = null;
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inDither = false;
@@ -139,7 +139,7 @@ public class FileManager {
     /**
      * 通过文件类型得到相应文件的集合
      **/
-    public static List<FileBean> getFilesByType(int fileType) {
+    private static List<FileBean> getFilesByType(int fileType) {
         List<FileBean> files = new ArrayList<FileBean>();
         // 扫描files文件库
         Cursor c = null;
@@ -173,7 +173,7 @@ public class FileManager {
     /**
      * 得到图片文件夹集合
      */
-    public static List<ImgFolderBean> getImageFolders() {
+    private static List<ImgFolderBean> getImageFolders() {
         List<ImgFolderBean> folders = new ArrayList<ImgFolderBean>();
         // 扫描图片
         Cursor c = null;
@@ -225,7 +225,7 @@ public class FileManager {
     /**
      * 通过图片文件夹的路径获取该目录下的图片
      */
-    public static List<String> getImgListByDir(String dir) {
+    private static List<String> getImgListByDir(String dir) {
         ArrayList<String> imgPaths = new ArrayList<>();
         File directory = new File(dir);
         if (directory == null || !directory.exists()) {
@@ -244,7 +244,7 @@ public class FileManager {
     /**
      * 获取已安装apk的列表
      */
-    public static List<AppInfo> getAppInfos() {
+    private static List<AppInfo> getAppInfos() {
 
         ArrayList<AppInfo> appInfos = new ArrayList<AppInfo>();
         //获取到包的管理者
