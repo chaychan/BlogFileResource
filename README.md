@@ -10,6 +10,8 @@
 
 [ShareSDKUtils，封装的分享工具类，使用默认的GUI或者自定义分享某个平台](http://www.jianshu.com/p/d7c86033a3b1)
 
+[Android中如何使用代码打开各种类型的文件](http://www.jianshu.com/p/1414101858c1)
+
 ### CSDN和简书地址
 
 [我的CSDN地址](http://blog.csdn.net/chay_chan?viewmode=contents)
