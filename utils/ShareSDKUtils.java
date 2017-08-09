@@ -42,7 +42,7 @@ public class ShareSDKUtils {
      * @param siteUrl       网站的Url
      * @param shareListener 分享的回调
      */
-    public static void useDefaultGUI(String title, String content, String imgUrl, String siteUrl, PlatformActionListener shareListener) {
+    private static void useDefaultGUI(String title, String content, String imgUrl, String siteUrl, PlatformActionListener shareListener) {
         ShareSDK.initSDK(mContext);
         OnekeyShare oks = new OnekeyShare();
         //关闭sso授权
@@ -83,7 +83,7 @@ public class ShareSDKUtils {
      * @param imgPath       本地图片的绝对路径
      * @param shareListener 分享的回调
      */
-    public static void shareToWechat(String wechatType, int shareType, String title, String content, String siteUrl, String imgUrl, Bitmap bm, String imgPath, PlatformActionListener shareListener) {
+    private static void shareToWechat(String wechatType, int shareType, String title, String content, String siteUrl, String imgUrl, Bitmap bm, String imgPath, PlatformActionListener shareListener) {
         ShareSDK.initSDK(mContext);
 
         Wechat.ShareParams shareParams = new Wechat.ShareParams();
@@ -128,7 +128,7 @@ public class ShareSDKUtils {
      * @param imgPath       本地图片的绝对路径
      * @param shareListener 分享的回调
      */
-    public static void shareToQQ(String title, String content, String siteUrl, String imgUrl, Bitmap bm, String imgPath, PlatformActionListener shareListener) {
+    private static void shareToQQ(String title, String content, String siteUrl, String imgUrl, Bitmap bm, String imgPath, PlatformActionListener shareListener) {
         ShareSDK.initSDK(mContext);
         QQ.ShareParams shareParams = new QQ.ShareParams();
         shareParams.setShareType(Platform.SHARE_WEBPAGE);
@@ -171,7 +171,7 @@ public class ShareSDKUtils {
      * @param imgPath       本地图片的绝对路径
      * @param shareListener 分享的回调
      */
-    public static void shareToSina(String content, String siteUrl, String imgUrl, Bitmap bm, String imgPath, PlatformActionListener shareListener) {
+    private static void shareToSina(String content, String siteUrl, String imgUrl, Bitmap bm, String imgPath, PlatformActionListener shareListener) {
         ShareSDK.initSDK(mContext);
         SinaWeibo.ShareParams shareParams = new SinaWeibo.ShareParams();
         shareParams.setContentType(Platform.SHARE_WEBPAGE);
