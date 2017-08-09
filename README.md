@@ -8,6 +8,8 @@
 
 [Android获取本机各种类型文件列表（音乐、视频、图片、文档等）](http://www.jianshu.com/p/190ec8ff3e6c)
 
+[ShareSDKUtils，封装的分享工具类，使用默认的GUI或者自定义分享某个平台](http://www.jianshu.com/p/d7c86033a3b1)
+
 ### CSDN和简书地址
 
 [我的CSDN地址](http://blog.csdn.net/chay_chan?viewmode=contents)
