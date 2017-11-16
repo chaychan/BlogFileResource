@@ -12,6 +12,8 @@
 
 [Android中如何使用代码打开各种类型的文件](http://www.jianshu.com/p/1414101858c1)
 
+[PinyinUtils，拼音工具类](http://www.jianshu.com/p/6e3eed117342)
+
 ### CSDN和简书地址
 
 [我的CSDN地址](http://blog.csdn.net/chay_chan?viewmode=contents)
