@@ -31,7 +31,7 @@ public class FileManager {
 
     private static FileManager mInstance;
     private static Context mContext;
-    public static ContentResolver mContentResolver;
+    private static ContentResolver mContentResolver;
     private static Object mLock = new Object();
 
     public static FileManager getInstance(Context context){
@@ -51,7 +51,7 @@ public class FileManager {
      * 获取本机音乐列表
      * @return
      */
-    private static List<Music> getMusics() {
+    public List<Music> getMusics() {
         ArrayList<Music> musics = new ArrayList<>();
         Cursor c = null;
         try {
@@ -91,7 +91,7 @@ public class FileManager {
      * 获取本机视频列表
      * @return
      */
-    private static List<Video> getVideos() {
+    public List<Video> getVideos() {
 
         List<Video> videos = new ArrayList<Video>();
 
@@ -127,7 +127,7 @@ public class FileManager {
     }
 
     // 获取视频缩略图
-    private static Bitmap getVideoThumbnail(int id) {
+    public Bitmap getVideoThumbnail(int id) {
         Bitmap bitmap = null;
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inDither = false;
@@ -139,7 +139,7 @@ public class FileManager {
     /**
      * 通过文件类型得到相应文件的集合
      **/
-    private static List<FileBean> getFilesByType(int fileType) {
+    public List<FileBean> getFilesByType(int fileType) {
         List<FileBean> files = new ArrayList<FileBean>();
         // 扫描files文件库
         Cursor c = null;
@@ -173,7 +173,7 @@ public class FileManager {
     /**
      * 得到图片文件夹集合
      */
-    private static List<ImgFolderBean> getImageFolders() {
+    public List<ImgFolderBean> getImageFolders() {
         List<ImgFolderBean> folders = new ArrayList<ImgFolderBean>();
         // 扫描图片
         Cursor c = null;
@@ -225,7 +225,7 @@ public class FileManager {
     /**
      * 通过图片文件夹的路径获取该目录下的图片
      */
-    private static List<String> getImgListByDir(String dir) {
+    public List<String> getImgListByDir(String dir) {
         ArrayList<String> imgPaths = new ArrayList<>();
         File directory = new File(dir);
         if (directory == null || !directory.exists()) {
@@ -244,7 +244,7 @@ public class FileManager {
     /**
      * 获取已安装apk的列表
      */
-    private static List<AppInfo> getAppInfos() {
+    public List<AppInfo> getAppInfos() {
 
         ArrayList<AppInfo> appInfos = new ArrayList<AppInfo>();
         //获取到包的管理者
